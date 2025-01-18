@@ -29,6 +29,7 @@
 :root{
     --primary-color:#FF900E;
     --secondary-color:#727272;
+    --footer-bg-color:#FFF4E7;
 }
 
 /* header links */
@@ -41,11 +42,8 @@
 }
 
 .head0{
-    font-size: 45px;
+    font-size:2.8rem;
     font-weight: bold;
-}
-.nav-links{
-    
 }
 
 .nav-links .nav-item{
@@ -134,6 +132,56 @@ main> section{
     border-radius: 0.5rem;
     border: none;
 }
+.featueres {
+   gap: 146px;
+   
+}
+
+.featueres-left .head5{
+    font-size: 45px;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+.featueres-left .par4{
+      font-size: 1rem;
+      color: #424242;
+      margin-bottom: 30px;
+}
+.featueres-child{
+    margin-bottom: 1.25rem;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 0 3px rgb(244, 242, 242);
+}
+.featueres-child .head6{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    
+}
+.featueres-child .par5{
+    font-size: 1rem;
+    color: #424242;
+}
+.btn-class{
+    background-color: var(--primary-color);
+    color: white;
+    padding: 45px 42px;
+    border-radius: 8px;
+    border: none;
+    margin-left: -100px;
+    margin-top: -100px;
+}
+.btn-class .span1{
+    font-size: 65px;
+    font-weight: bold;
+}
+.btn-class .span2{
+    font-size: 25px;
+    font-weight: 500;
+}
 .title-facts .head3{
     font-size:2.8rem;
     font-weight: bold;
@@ -193,21 +241,51 @@ main> section{
     /* filter: invert(100%); */
 
 }
+.footer-container{
+    background-color: var(--footer-bg-color);
+    text-align: center;
+    margin: 0 40px;
+    margin-bottom: 210px;
+    border-radius: 8px;
+
+}
+.footer-container .par4{
+    background-color: var(--footer-bg-color);
+    padding: 2.6rem;
+    font-size: 1.25rem;
+    color:#424242;
+    
+} 
 @media screen and (max-width:576px) {
       .navbar,
       .nav-links,
-      .teams{
+      .teams,
+      .featueres{
         flex-direction: column;
         margin-right: 0px;
+      }
+      .navbar{
+        width: 100%;
+
+      }
+      .navbar .head0{
+        width: 100%;
       }
       .image-left,.container-facts,.image-icons{
         grid-template-columns: 1fr;
       }
-     
       .title-right{
         margin-left: 30px;
         width:100%;
         margin: 20px auto;
+      }
+
+      .featueres .featueres-right img{
+        width: 100%;
+      }
+      .featueres .btn-class{
+        margin-top: 20px;
+        margin-left: 20px;
       }
 }
 
@@ -226,6 +304,16 @@ main> section{
         margin: 10px;
       }
      
+      .featueres{
+        flex-direction: column;
+         }
+         .featueres-right img{
+            width: 100%;
+         }
+      .featueres .btn-class{
+        margin-top: 20px;
+        margin-left: 20px;
+      }
       .title-right{
         margin: 15px auto;
       }
